@@ -1,21 +1,4 @@
-   <nav class="row">
-        <img class="col text-center nav-link" src="images/logoFT.jpg" alt="Logo France Travail" style="width:225px;height:180px;">
-        <a class="col text-center nav-link" href="accueil.php"></br></br></br><h1>Accueil</h1></a>
-        <a class="col text-center nav-link" href="equipes.php"></br></br></br><h1>Afficher vos équipes</h1></a>
-        <a class="col text-center nav-link" href="compte.php"><img src="images/login.jpg" alt="Login" style="width:225px;height:180px;"></a>
-    </nav>
-
-    <div class="btn-group">
-        <a href="accueil.php">
-            <button type="button" class="btn btn-primary">Accueil
-            </button>   
-        </a>
-        <button type="button" class="btn btn-primary" href="equipes.php">Affiche vos équipes</button>
-        <div class="btn-group"> 
-            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Compte</button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="compte.php">Informations</a>
-                <a class="dropdown-item" href="modif.php">Modification</a>
-            </div>
-        </div>
-    </div>
+<html>
+<h1>hollow void</h1>
+<p>May you have not forgotten my name<p>
+</html>
