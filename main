@@ -1,4 +1,71 @@
-<html>
-<h1>hollow void</h1>
-<p>May you have not forgotten my name<p>
+<style>
+  footer{
+      background-color:#00237B;
+      color: white;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  header{
+    background-color:orange;
+    color: white;
+  }
+</style>
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+
+<header>
+  </br>
+  <h4>Ce site est toujour en cour de fabrication</h4>
+  </br>
+</header>
+<body>
+  <ul>
+    <li><a href="#tp-1">A proposd de moi</a></li>
+    <li><a href="#tp-2"">Languages maitrisés</a></li>
+    <li><a href="#contact"></a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  
+  <h1 id="tp-1">Adrien Cirade</h1>
+  <p>May you have not forgotten my name</p>
+
+  <h2 id="tp-2">Languages maitrisés</h2>
+  <p>Java</p> <p>HTML</p> <p>CSS</p> <p>PHP</p> <p>SQL</p>
+</body>
+
+<footer>
+    <div>
+        </br>
+        <p>© Adrien Cirade 2024</p>
+        <p>Tel : 06 64 84 19 97 | Mail : ad.cirade@sfr.fr | Linkedin : </p>
+        </br>
+    </div>
+</footer>
 </html>
