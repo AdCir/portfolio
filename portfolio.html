@@ -46,13 +46,20 @@
   </br>
 </header>
 <body>
+    <h3>Tableau de competence :</h3>
+
+  <h3>Formtation professionelles :</h3>
+  </br>
+  <p> 2 Stage dans le DSI de France-Travail à La Chapelle Saint Mesmin</p>
+  <p> - L'un pour développer des macros Excel afin de faciliter le traitement de donnée</p>
+  <p> - L'autre afin de développer un site internet pour reprendre l'outil de gestion d'équipe Teams</p> 
+  
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'London')">A Propos de moi</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">Language de programmation maitrisés</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+    <button class="tablinks" onclick="openCity(event, 'About')">A Propos de moi</button>
+    <button class="tablinks" onclick="openCity(event, 'LangPro')">Language de programmation maitrisés</button>
     <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
   </div>
-  
+
   <div id="About" class="tabcontent">
     <p>Je suis un étudiant en seconde année de BTS SIO option SLAM </p>
   </div>
@@ -73,14 +80,26 @@
     <p>Le SQL est un language de base de donnée permettant de créer des tables pouvant enregistrer des données ou de les traitées</p>
   </div>
 
-  
-    <h3>Tableau de competence :</h3>
+  <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
 
-  <h3>Formtation professionelles :</h3>
-  </br>
-  <p> 2 Stage dans le DSI de France-Travail à La Chapelle Saint Mesmin</p>
-  <p> - L'un pour développer des macros Excel afin de faciliter le traitement de donnée</p>
-  <p> - L'autre afin de développer un site internet pour reprendre l'outil de gestion d'équipe Teams</p> 
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 </body>
 
