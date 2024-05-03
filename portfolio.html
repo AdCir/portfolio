@@ -120,6 +120,7 @@
   </div>
 
 <script>
+document.getElementById("defaultOpen").click(); 
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -133,7 +134,6 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-document.getElementById("defaultOpen").click();  
 </script>
 
 </body>
