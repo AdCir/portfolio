@@ -189,7 +189,8 @@ body {font-family: Verdana, sans-serif; margin:0}
   </br>
   <h4 class=nom>Adrien Cirade</h4>
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'defaultOpen')">A Propos de moi</button>
+    <button class="tablinks" onclick="openCity(event, 'defaultOpen')">Accueil</button>
+    <button class="tablinks" onclick="openCity(event, 'aboutme')">A Propos de moi</button>
     <button class="tablinks" onclick="openCity(event, 'LangPro')">Language de programmation maitrisés</button>
     <button class="tablinks" onclick="openCity(event, 'Comp')">Compétences / Parcours professionnel</button>
   </div>
@@ -197,6 +198,10 @@ body {font-family: Verdana, sans-serif; margin:0}
 <body>
 
   <div id="defaultOpen" class="tabcontent">
+    
+  </div>
+
+  <div id="aboutme" class="tabcontent">
     <p>Je m'appelle Adrien Cirade et je suis un étudiant en <b>seconde année de BTS en Service Informatique au Organisations (SIO ) option Solutions Logicielles et Applications Métiers ( SLAM )</b>.</p>
     <a href="images/CV_Adrien_CIRADE_14mai2024_ sans tel.pdf" download="CV_Adrien_Cirade.pdf"><button class="buttontel">Télécharge mon CV</button></a>
     <img class="cv" src="images/CV_Adrien_CIRADE_14mai2024_ sans tel - Copie_page-0001.jpg" alt="try"/> </br>
@@ -328,8 +333,6 @@ body {font-family: Verdana, sans-serif; margin:0}
   </div>
 
 <script>
-document.getElementById("defaultOpen").click(); 
-  
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -342,6 +345,8 @@ function openCity(evt, cityName) {
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
+
+  document.getElementById("defaultOpen").click();
 }
 </script>
 
