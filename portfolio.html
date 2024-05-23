@@ -197,7 +197,7 @@ body {font-family: Verdana, sans-serif; margin:0}
   </br>
   <h4 class=nom>Adrien Cirade</h4>
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'accueil')">Accueil</button>
+    <button class="tablinks defaultOpen" onclick="openCity(event, 'accueil')">Accueil</button>
     <button class="tablinks" onclick="openCity(event, 'aboutme')">A Propos de moi</button>
     <button class="tablinks" onclick="openCity(event, 'LangPro')">Langages de programmation maitrisés</button>
     <button class="tablinks" onclick="openCity(event, 'Comp')">Compétences / Parcours professionnel</button>
@@ -355,9 +355,8 @@ function openCity(evt, cityName) {
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-
-  document.getElementById("defaultOpen").click();
 }
+  document.getElementById("defaultOpen").click();
 </script>
 
 </body>
