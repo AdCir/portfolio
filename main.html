@@ -1,0 +1,389 @@
+<style>
+  header{
+      background-color:#00237B;
+      color: white;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      position: sticky;
+    }
+
+  .accueil{
+    text-align: center;
+  }
+  
+  footer{
+      background-color:#00237B;
+      color: white;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .linke{
+    color:white;
+  }
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+.dessin{
+  max-width: 15%;
+  max-height: 15%
+}
+  
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+  
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+
+.cv{
+  max-width: 50%;
+  max-height: 50%
+}
+
+.buttontel{
+  border-radius: 12px;
+  background-color:#00237B;
+  color: white;
+  font-size: 16px;
+}
+  
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: light_grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+  
+}
+</style>
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+
+<header>
+  </br>
+  <h4 class=nom>Adrien Cirade</h4>
+  <div class="tab">
+    <button class="tablinks defaultOpen" onclick="openCity(event, 'accueil')">Accueil</button>
+    <button class="tablinks" onclick="openCity(event, 'aboutme')">A Propos de moi</button>
+    <button class="tablinks" onclick="openCity(event, 'LangPro')">Langages de programmation maitrisés</button>
+    <button class="tablinks" onclick="openCity(event, 'Comp')">Compétences / Parcours professionnel</button>
+    <button class="tablinks" onclick="openCity(event, 'Perso')">Pour en avoir plus</button>
+  </div>
+</header>
+<body>
+
+  <div id="accueil" class="tabcontent">
+    <h1>Bienvenue sur mon Portefolio.</h1>
+    <p>Je suis Adrien Cirade.</p>
+    <p>Vous trouverez sur ce site mes compétence, mon CV ansi que certain projet que j'ai réalisé.</p>
+  </div>
+
+  <div id="aboutme" class="tabcontent">
+    <p>Je m'appelle Adrien Cirade et je suis un étudiant en <b>seconde année de BTS en Service Informatique au Organisations (SIO ) option Solutions Logicielles et Applications Métiers ( SLAM )</b>.</p>
+    <a href="images/CV_Adrien_CIRADE_14mai2024_ sans tel.pdf" download="CV_Adrien_Cirade.pdf"><button class="buttontel">Télécharge mon CV</button></a>
+    <img class="cv" src="images/CV_Adrien_CIRADE_14mai2024_ sans tel - Copie_page-0001.jpg" alt="try"/> </br>
+  </div>
+
+  <div id="LangPro" class="tabcontent">
+    <h2 id="tp-2">Langages de programmation maitrisés :</h2>
+    </br>
+    </br>
+    </br>
+    </br>
+
+    <div class="slideshow-container">
+      
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="images/languages.jpg" alt="try"/>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <div class="text">
+      <h4>Java</h4>
+      <p>Le Java est un langage de programmation permettant de faire de nombreuses choses comme des applications</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <div class="text">
+      <h4>HTML</h4>
+      <p>Le HTML est la base de tout site web dans le monde, comme celui-ci</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 7</div>
+      <div class="text">
+      <h4>Javascript</h4>
+      <p>Le Javascript est un langage permettant de créer des fonctionnalités supplémentaires générées sur la machine du client</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <div class="text">
+      <h4>CSS</h4>
+      <p>Le CSS permet d'améliorer l'apparence d'un site web</p>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <div class="text">
+      <h4>PHP</h4>
+      <p>Le PHP est un langage permetant à un serveur de traiter des requètes comme des formulaires afin d'afficher les données demandées ou de les enregistrer.</p>
+      </div>
+    </div>  
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 7</div>
+      <div class="text">
+      <h4>SQL</h4>
+      <p>Le SQL est un langage de base de donnée permettant de créer des tables pouvant enregistrer des données ou de les traiter</p>
+      </div>
+    </div>  
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+    
+<br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span> 
+  </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+  </div>
+
+  <div id="Comp" class="tabcontent">
+    <h3>Tableau de compétences :</h3>
+    <img src="images/Capture d'écran 2024-05-22 091615.png" alt="try"/>
+    </br>
+    </br>
+    <p></p>Création d'un site internet pour de l'information climatique en projet de classe :</p>
+    <a href="images/Fiche descriptive de realisation professionnelle - Site d-information climatique _ VF.pdf" download="Documentation_site_climatique.pdf"><button class="buttontel">Télécharger la documentation du site</button></a>
+    </br>
+    </br>
+    <h3>Formations professionelles :</h3>
+    <p> 2 Stages dans la Direction des Services Informatique (DSI) de France-Travail à La Chapelle Saint Mesmin</p>
+    <p> - L'un pour développer des macros Excel afin de faciliter le traitement de données</p>
+    <p> - L'autre afin de développer un site internet pour reprendre l'outil de gestion d'équipes Teams</p>
+    <a href="images/Fiche descriptive de realisation professionnelle - Site de gestion d-equipe_ VF.pdf" download="Documentation_site_gestion_equipe.pdf"><button class="buttontel">Télécharger la documentation du site</button></a>
+  </div>
+
+  <div id="Perso" class="tabcontent">
+      <p>Quelque exemples de création graphique :</p>
+      <img class="dessin" src="images/image.jpg" alt="try"/>
+      <a href="https://www.instagram.com/p/CcgLtSXDLcC/">Lien Instagram<a>
+      
+      <p>Réguliairement, je suis bugtesteur bénévole pour des petits créateurs de jeux-vidéo en ligne </br> Voici quelque exemple de rapport que j'ai pût envoyer :</p> 
+      <img src="Capture d'écran 2024-05-29 215828.png" alt="try"/>
+      <img src="Capture d'écran 2024-05-29 220350.png" alt="try"/>
+        
+  </div>  
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+
+<footer>
+    <div>
+        </br>
+        <p>© Adrien Cirade 2024</p>
+        <p>Mail : ad.cirade@sfr.fr | Linkedin : <a href=https://www.linkedin.com/in/adrien-cirade-8853252a2/ class="linke">Adrien Cirade</a> </p>
+        </br>
+    </div>
+</footer>
+</html>
